@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Notes on My New Hugo Site</title>
+    <link>https://example.org/notes/</link>
+    <description>Recent content in Notes on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 27 Dec 2023 15:14:41 +0800</lastBuildDate>
+    <atom:link href="https://example.org/notes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Fistdd</title>
+      <link>https://example.org/notes/fistdd/</link>
+      <pubDate>Wed, 27 Dec 2023 15:14:41 +0800</pubDate>
+      <guid>https://example.org/notes/fistdd/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Fist</title>
+      <link>https://example.org/notes/fist/</link>
+      <pubDate>Wed, 27 Dec 2023 15:13:52 +0800</pubDate>
+      <guid>https://example.org/notes/fist/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>One_day</title>
+      <link>https://example.org/notes/one_day/</link>
+      <pubDate>Tue, 26 Dec 2023 14:49:13 +0800</pubDate>
+      <guid>https://example.org/notes/one_day/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>测试开发</title>
+      <link>https://example.org/notes/%E6%B5%8B%E8%AF%95%E5%BC%80%E5%8F%91/</link>
+      <pubDate>Tue, 26 Dec 2023 11:57:23 +0800</pubDate>
+      <guid>https://example.org/notes/%E6%B5%8B%E8%AF%95%E5%BC%80%E5%8F%91/</guid>
+      <description>基础知识 二、十进制互换&#xA;二转十:&#xA;从二进制数的最右边开始，将每个位上的数字乘以 2 的幂，幂值从 0 开始递增。将得到的乘积相加，即可得到十进制数的值。如，将二进制数 1101 转换为十进制数： 1 * 2^3^+ 1 * 2^2^ + 0 * 2^1^ + 1 * 2^0^ = 13&#xA;bin(十进制数(.)(.) 0b开头的二进制数 十转二:&#xA;用 2 除以该数，记录余数。将商作为新的被除数，再次用 2 除以该数，继续记录余数。重复上述步骤，直到商为 0 为止。将记录的余数按照从下到上的顺序排列，即得到二进制数。&#xA;例如，将十进制数 26 转换为二进制数： 26 ÷ 2 = 13 余 0 13 ÷ 2 = 6 余 1 6 ÷ 2 = 3 余 0 3 ÷ 2 = 1 余 1 1 ÷ 2 = 0 余 1;余数从下到上排列为 11010，即为 26 的二进制表示。</description>
+    </item>
+  </channel>
+</rss>
