@@ -51,8 +51,8 @@ draft = true
          1. ```shell
             cd your_filename
             git init # 初始化git
-            git submodule add https://github.com/lxndrblz/anatole.git themes/anatole # 将anatole仓库作为themes/anatole的字模块添加到当前的git仓库 
-            echo theme = "anatole" >> config.toml # 主题改为anatole主题
+            git submodule add https://github.com/CaiJimmy/hugo-theme-stack.git themes/hugo-theme-stack # 将anatole仓库作为themes/anatole的字模块添加到当前的git仓库 
+            echo theme = "hugo-theme-stack" >> config.toml # 主题改为anatole主题
             ```
    
       3. 创建第一个博客
