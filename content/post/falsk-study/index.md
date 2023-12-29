@@ -4,7 +4,7 @@ description: flask的学习日志
 date: 2023-12-29
 slug: test-chinese
 image: helena-hertz-wWZzXlDpMog-unsplash.jpg
-draft = false
+draft: false
 categories:
 
 ---
