@@ -2,11 +2,8 @@
 title: flask
 description: flask的学习日志
 date: 2023-12-29
-slug: test-chinese
-image: helena-hertz-wWZzXlDpMog-unsplash.jpg
-draft: false
-categories:
-
+slug: study-flask
+image: flask-horizontal.jpg
 ---
 
 
