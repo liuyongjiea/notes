@@ -24,17 +24,16 @@ git add . # 将所有的需要进行版本管理的文件放入暂存区
 git commit -m “说明”  # 将暂存区的文件提交到本地仓库,此时生成记录
 git push # 将本地仓库推送到云仓库
 git pull # 将云仓库拉到工作区
-git clone url # 克隆代码
-git pull # 拉取代码
 git init # 初始化项目
 git clone url # 下载代码，.git后缀可省略
-git staus
+git status # 检查代码是否变更
 git branch # 查看本地分支
   git branch -r # 查看远程分支
   git branch new_codebase_name # 创建新分支
   git branch -d codebase_name # 删除分支
   git branch -dr [remote/branch] # 删除远程分支
   git push origin --delete [branch-name] # 删除远程分支
+
 git checkout oldBranch  # 切换分支
 	git checkout -b [branch] #  新建一个分支，并切换到该分支
 
