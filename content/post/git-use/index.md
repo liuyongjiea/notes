@@ -1,10 +1,14 @@
-+++
-title: git
-description: git的学习日志
-date: 2023-01-04
-slug: study-git
+---
+title: "Git Use"
+description: study-git
+date: 2024-01-04T10:24:46+08:00
 image: Git-logo.svg.png
-+++
+math: 
+license: 
+hidden: false
+comments: true
+draft: true
+---
 git是分布式版本控制工具
 svn是集中式控制工具
 
