@@ -16,9 +16,9 @@ svn是集中式控制工具
 
 新建文件，未跟踪（untracked），使用git add状态变为staged，之后可使用git rm移除版本库；未修改（unmodify）；修改（modified）可使用git add添加到暂存区，也可以用git checkout丢弃修改;staged可以用git commit将修改同步到库中，使用后变为未修改状态，使用git reset head filename取消暂存，文件状态为已修改
 
-## git命令
+### git命令
 
-```zsh
+```shell
 git config -l # 查看配置
 git add . # 将所有的需要进行版本管理的文件放入暂存区
 git commit -m “说明”  # 将暂存区的文件提交到本地仓库,此时生成记录
@@ -43,8 +43,11 @@ git tag -n # 查看项目仓库的标签
 git diff 标签名1 标签名2 # 对比两个标签之间的不同
 # 合并分支
 	git merge [branch] # 合并指定分支到当前分支，会产生commit
+```
 
+ [.gitignore的配置](https://github.com/github/gitignore/blob/main/Python.gitignore)
 
+```shell
 # 默认忽略上传的文件，在主目录建立“./gitgnore”文件
     #注释           .gitignore的注释
     *.txt           忽略所有 .txt 后缀的文件
@@ -67,5 +70,9 @@ git diff 标签名1 标签名2 # 对比两个标签之间的不同
     *.zip           忽略所有.zip文件
     /mtk/do.c       忽略某个具体文件
 ```
+
+
+
+
 
 Ssh -keygen -t rsa 创建公钥并以rsa方式加密存储
