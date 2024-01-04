@@ -7,12 +7,12 @@ math:
 license: 
 hidden: false
 comments: true
-draft: true
+draft: false
 ---
 git是分布式版本控制工具
 svn是集中式控制工具
 
-![image-20231212105646124](./测试开发.assets/image-20231212105646124.png)
+![local source](./image-20231212105646124.png)
 
 新建文件，未跟踪（untracked），使用git add状态变为staged，之后可使用git rm移除版本库；未修改（unmodify）；修改（modified）可使用git add添加到暂存区，也可以用git checkout丢弃修改;staged可以用git commit将修改同步到库中，使用后变为未修改状态，使用git reset head filename取消暂存，文件状态为已修改
 
