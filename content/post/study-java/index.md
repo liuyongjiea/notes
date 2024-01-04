@@ -2,7 +2,7 @@
 title: "Study Java"
 description: 
 date: 2024-01-04T10:53:52+08:00
-image: 
+image: java_logo_icon_168609.png
 math: 
 license: 
 hidden: false
