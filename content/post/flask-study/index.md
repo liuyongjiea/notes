@@ -75,7 +75,7 @@ app = Flask(__name__)
 
 ```python
 @app.route()
-	# 必须以“/”开始
+	# 必须以“/”开始，此方式为硬编码
   # 一个函数可以有多个route装饰器,且可以使用变量，如<name>
   	# 当使用变量时，用户访问的URl中没有添加变量，如设置url变量“/name/<age>”，用户访问“/name”，就会报404错误。因此需要设置默认值，即
     	@app.route("/name", defaults={"age": "15"})
@@ -86,7 +86,11 @@ app = Flask(__name__)
 			@app.route("/name/<age>")
 			def name(age=15):
     			return f"你好，{age}"
+url_for
+	# 软编码
 ```
+
+## flask的环境变量和运行机制
 
 💠 app.run()方法现在已不推荐使用，建议使用flask run
 
@@ -99,7 +103,18 @@ app = Flask(__name__)
 		# 加载变量优先级：“手动设置的环境变量>.env中设置的环境变量>.flaskenv设置的环境变量”
 		# .flaskenv存储与flask的变量，.env存储敏感信息，除非是私有项目，否则绝不能上传到github上（可在.gitignore文件中设置）
 flask run --host=0.0.0.0 --port 8080 # host使服务对外可见，同一个局域网可访问，若更多人可以访问，可使用ngrok或localtunnel等内网穿透/端口转发工具，或者租用公网
-	# 也可用FLASK_RUN_HOST和FLASK_RUN_PORT设置
+	# 也可用FLASK_RUN_HOST和FLASK_RUN_PORT设置host和post
+
+# 设置运行环境
+	# 根据运行环境不同，flask的行为和设置是不同的，默认为production环境，可在.flaskenv文件中设置FLASK_ENV=development。此时所有支持开发的特性都会被开启
+	
+# Werkzeug提供的调试器非常强大，呈现详细的错误追踪信息，且点击右侧的命令行图标并输入PIN码后，可以运行python代码进行调试。当对代码进行修改后，重载器检测到文本变动后，会重新启动开发服务器。
+	# 因为Werkzeug内置的stat重载器耗电严重且准确性一般，所以会安装watchdog
+		# 因为watchdog只会在开发时使用，因此可以在安装时使用“--dev”将其声明为开发依赖
+		
+# flask的配置变量通过app.config属性进行设置，该属性实际上为一个字典
+	# 添加配置变量类似在字典中添加键值对
+		# 键必须全部为大写或下划线
 ```
 
 
